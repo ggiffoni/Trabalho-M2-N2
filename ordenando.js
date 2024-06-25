@@ -124,7 +124,7 @@ function SH1(){
 
 /////////////////////////////////////////////////////////////////////////
 
-// FUNÇÃO SHUFFLE 2:
+// FUNÇÃO SHUFFLE 2 (ALGORÍTIMO MAIS SIMPLES):
 
 shuffle_2 = (vetor) => {
     let vetor_embaralhado = vetor.sort((a, b) => Math.random() - 0.5);
