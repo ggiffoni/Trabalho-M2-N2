@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo valores em um vetor por meio de input html.</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend>Adicione os valores.</legend>
+                <label for="valor_digitado">Valor:</label>
+                <input type="number" id="valor_digitado"/>
+                <button type="button" id="Valor_digitado" onclick="ADD_AUX()">Adicionar</button>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Escolha o algorítimo para ordenar.</legend>
+                <button type="button" id="bs" onclick="BS()">Bubble Sort</button>
+                <button type="button" id="ss" onclick="SS()">Selection Sort</button>
+                <button type="button" id="qs" onclick="QS()">Quick Sort</button>
+                                                              
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Embaralhar.</legend>
+                <button type="button" id="emb" onclick="misturar()">Misture</button>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Valores Adicionados</legend>
+                <ul></ul>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Vetor</legend>
+                <p id="vet"></p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Vetor Ordenado</legend>
+                <span id="vet2"></span>
+            </fieldset>
+              
+        </form>
+        
+    </div>
+
+    <script src="ordenando.js"></script>
+
+</body>
+</html>
