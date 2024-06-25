@@ -1,0 +1,35 @@
+.container{
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#Valor_digitado{
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    width: 80px;
+    height:35px;
+}
+
+#button{
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    width: 80px;
+    height:35px;
+}
+
+#button_2{
+    color: black;
+    background-color: orange;
+    font-weight: bold;
+    width: 80px;
+    height:35px;
+}
+
