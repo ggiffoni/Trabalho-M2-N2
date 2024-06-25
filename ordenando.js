@@ -1,4 +1,4 @@
-//ADICIONANDO ELEMENTOS NA LISTA E NO VETOR:
+///////////ADICIONANDO ELEMENTOS NA LISTA E NO VETOR://///////
 
 let vetor = [];
 
@@ -15,6 +15,8 @@ function ADD_AUX(){
 
 }
 ////////////////////////////////////////////////////////////////
+
+////////////////ALGORÍTIMOS DE ORDENAÇÃO///////////////////////
 
 //ORDENAÇÃO BUBBLE SORT:
 
@@ -78,7 +80,9 @@ function QS(){
 }
 /////////////////////////////////////////////////////////////////////
 
-//ALGORÍTIMOS PARA EMBARALHAR O VETOR:
+////////////ALGORÍTIMOS PARA EMBARALHAR O VETOR:////////////////////
+
+// FUNÇÃO SWAP:
 
 swap = (vetor, i, j) => {
     a = vetor[i];
@@ -88,6 +92,17 @@ swap = (vetor, i, j) => {
 
     return vetor
 }
+
+function SW(){
+    let x = document.getElementById("valor_i").value;
+    let y = document.getElementById("valor_j").value;
+    document.getElementById("vet3").innerHTML = swap(vetor, x, y);
+
+}
+
+//////////////////////////////////////////////////////////////////////
+
+// FUNÇÃO SHUFFLE 1:
 
 shuffle_1 = (vetor) => {
     let vetor_embaralhado = [...vetor];
@@ -102,8 +117,24 @@ shuffle_1 = (vetor) => {
     return vetor_embaralhado
 }
 
+function SH1(){
+    document.getElementById("vet3").innerHTML = shuffle_1(vetor);
+
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+// FUNÇÃO SHUFFLE 2:
+
 shuffle_2 = (vetor) => {
     let vetor_embaralhado = vetor.sort((a, b) => Math.random() - 0.5);
     return vetor_embaralhado
 
 }
+
+function SH2(){
+    document.getElementById("vet3").innerHTML = shuffle_2(vetor);
+
+}
+
+//////////////////////////////////////////////////////////////////////////

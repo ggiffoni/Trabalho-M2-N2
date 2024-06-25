@@ -12,7 +12,7 @@
     <div>
         <form>
             <fieldset>
-                <legend>Adicione os valores.</legend>
+                <legend>Adicione os valores ao vetor.</legend>
                 <label for="valor_digitado">Valor:</label>
                 <input type="number" id="valor_digitado"/>
                 <button type="button" id="Valor_digitado" onclick="ADD_AUX()">Adicionar</button>
@@ -28,7 +28,15 @@
             <br>
             <fieldset>
                 <legend>Embaralhar.</legend>
-                <button type="button" id="emb" onclick="misturar()">Misture</button>
+                <button type="button" id="emb" onclick="SW()">Swap</button>
+                <button type="button" id="emb" onclick="SH1()">Shuffle-1</button>
+                <button type="button" id="emb" onclick="SH2()">Shuffle-2</button>
+                <br>
+                <br>
+                <label for="valor_i">Insira a primeira posição para Swap:</label>
+                <input type="number" name="valor_i" id="valor_i"/>
+                <label for="valor_i">Insira a segunda posição para Swap:</label>
+                <input type="number" name="valor_j" id="valor_j"/>
             </fieldset>
             <br>
             <fieldset>
@@ -37,13 +45,18 @@
             </fieldset>
             <br>
             <fieldset>
-                <legend>Vetor</legend>
+                <legend>Vetor Original</legend>
                 <p id="vet"></p>
             </fieldset>
             <br>
             <fieldset>
                 <legend>Vetor Ordenado</legend>
                 <span id="vet2"></span>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Vetor Embaralhado</legend>
+                <span id="vet3"></span>
             </fieldset>
               
         </form>
