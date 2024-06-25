@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha do Giffoni - Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/formatos.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <img src="./images/logo.png" style="width: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Receitas.html">Receitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cadastro.html">Cadastro</a>
+          </li>
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+        
+    <div class="row main">
+
+        <div class="col-11 text-center">
+            
+            <h1>&nbsp EFETUE SEU CADASTRO</h1>
+            <br>
+
+            <form action="https://formsubmit.co/ggiffoni@gmail.com" method="POST">
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">&nbsp Nome</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="colFormLabel" name="Nome" required>
+                    </div>
+                </div>
+                  
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">&nbsp Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" name="email" required>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <label for="inputcep3" class="col-sm-2 col-form-label">&nbsp CEP</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputcep3" name="CEP" placeholder="11111-111" pattern="[0-9]{5}-[0-9]{3}" required>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <label for="inputrua3" class="col-sm-2 col-form-label">&nbsp Rua</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputrua3" name="Rua" required>
+                    </div>
+                  </div>
+                
+                <div class="row mb-3">
+                    <label for="inputnum3" class="col-sm-2 col-form-label">&nbsp Número</label>
+                    <div class="col-sm-3">
+                      <input type="number" class="form-control" id="inputnum3" name="Número" required>
+                    </div>
+
+                    <label for="inputcep3" class="col-sm-2 col-form-label">Complemento</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="inputcep3" name="Complemento">
+                    </div>
+
+                </div>    
+                
+                <div class="row mb-3">
+                    <label for="inputcidade3" class="col-sm-2 col-form-label">&nbsp Cidade</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="inputcidade3" name="Cidade">
+                    </div>
+
+                    <label for="inputuf3" class="col-sm-2 col-form-label">UF</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="inputuf3" name="UF" maxlength="2" minlength="2">
+                    </div>
+
+                </div>
+                
+                <div class="row-mb-3">
+                    <label for="inputnum3" class="col-sm-2 col-form-label"></label>
+                    <button type="submit" class="btn btn-primary col-sm-2">Cadastrar</button>
+                </div>
+                
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Sucesso.html">
+                
+                
+            </form>
+
+        </div>
+
+    </div>
+
+   </main>
+
+    <footer class="rodape">
+    @GGIFFONI 2023
+    </footer>
+
+  </body>
+
+</html>
